@@ -1,18 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
 
 
 
 ul {
     list-style-type: none;
-    height: 40px;
+    height: 43px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -30,7 +22,7 @@ li a{
     text-align: center;
     padding: 10px 13px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
 
 }
 
