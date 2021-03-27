@@ -1,12 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './navbar.css';
 
 function navbar() {
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container" />
-      </nav>
-    </>
+    <div className="navbar">
+
+      <ul>
+        <li>
+          {' '}
+          <a href="#home" className="active">Home</a>
+        </li>
+        <li>
+          {' '}
+          <a href="#news">News</a>
+        </li>
+        <li>
+          {' '}
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          {' '}
+          <a href="#about">About</a>
+        </li>
+      </ul>
+    </div>
   );
 }
 
