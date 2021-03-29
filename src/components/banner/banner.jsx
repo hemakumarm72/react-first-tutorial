@@ -6,7 +6,7 @@ function banner() {
 
     <div className="bannercontrol">
       <Bgimage />
-      <Bgtext />
+
     </div>
   );
 }
@@ -15,6 +15,7 @@ const Bgimage = () => (
   <div className="banner-img">
 
     <img src="./image/banner.jfif" alt="" />
+    <Bgtext />
   </div>
 );
 
