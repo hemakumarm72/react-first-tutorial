@@ -30,8 +30,8 @@ const Contentsection = () => (
 
 const Contentcard = () => (
   <div className="card-container">
-    <Cardsection image="http://placeimg.com/280/400/spiderman" />
-    <Cardsection image="http://placeimg.com/280/400/avergas" />
+    <Cardsection image="http://placeimg.com/380/400/spiderman" />
+    <Cardsection image="http://placeimg.com/680/400/avergas" />
     <Cardsection image="http://placeimg.com/280/400/animals" />
     <Cardsection image="http://placeimg.com/280/400/dogs" />
     <Cardsection image="http://placeimg.com/280/400/moon" />
