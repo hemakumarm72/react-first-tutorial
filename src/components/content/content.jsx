@@ -1,19 +1,26 @@
 import React from 'react';
 import './content.css';
 
-function content() {
+export function Content({ types }) {
   return (
     <div className="content">
-      <Contentsection />
+
+      <Contentsection type={types} />
       <Contentcard />
 
     </div>
   );
 }
 
-const Contentsection = () => (
+const Contentsection = ({ type }) => (
   <div className="content-section">
-    <p className="content-para">Our Service</p>
+    <p className="content-para">
+      Our
+      {' '}
+      {type}
+      {' '}
+      Service
+    </p>
     <br />
     <p>
       Top 100 Television Movies. Best of Rotten Tomatoes.
@@ -43,4 +50,4 @@ const Contentcard = () => (
 const Cardsection = ({ image }) => (
   <div className="card" style={{ backgroundImage: `url(${image})` }} />
 );
-export default content;
+export default Content;

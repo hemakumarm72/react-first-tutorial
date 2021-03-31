@@ -12,23 +12,23 @@ const navmenudata = [
   {
     menu: 'Home',
     link: '/',
-    mode: 'active',
+
   },
   {
 
     menu: 'News',
     link: '/news',
-    mode: 'inactive',
+
   },
   {
     menu: 'Contact',
     link: '/contact',
-    mode: 'inactive',
+
   },
   {
     menu: 'About',
-    link: '#link',
-    mode: 'inactive',
+    link: '/about',
+
   },
 ];
 
@@ -41,7 +41,7 @@ const Navmenu = () => (
 
         <li>
 
-          <a href={d.link} className={d.mode}>{d.menu}</a>
+          <a href={d.link} className={window.location.pathname === d.link ? 'active' : ''}>{d.menu}</a>
         </li>
 
       ))}
