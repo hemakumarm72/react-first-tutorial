@@ -21,5 +21,6 @@ module.exports = {
   rules: {
     'linebreak-style': 0,
     'react/prop-types': 0,
+    'import/prefer-default-export': 0,
   },
 };
