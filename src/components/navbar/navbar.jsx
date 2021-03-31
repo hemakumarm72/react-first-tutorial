@@ -17,12 +17,12 @@ const navmenudata = [
   {
 
     menu: 'News',
-    link: '/News',
+    link: '/news',
     mode: 'inactive',
   },
   {
     menu: 'Contact',
-    link: '#Contact',
+    link: '/contact',
     mode: 'inactive',
   },
   {
@@ -34,18 +34,19 @@ const navmenudata = [
 
 const Navmenu = () => (
   <div className="navbar">
-    <>
-      <ul>
-        {navmenudata.map((d) => (
 
-          <li>
+    <ul>
 
-            <a href={d.link} className={d.mode}>{d.menu}</a>
-          </li>
+      {navmenudata.map((d) => (
 
-        ))}
-      </ul>
-    </>
+        <li>
+
+          <a href={d.link} className={d.mode}>{d.menu}</a>
+        </li>
+
+      ))}
+    </ul>
+
   </div>
 );
 
