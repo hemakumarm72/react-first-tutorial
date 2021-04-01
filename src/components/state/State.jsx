@@ -2,23 +2,13 @@ import React from 'react';
 import './state.css';
 
 class Counter extends React.Component {
-  constructor(props) {
-    super(props);
+  state = { count: 0 }
 
-    this.state = {
-      count: 0,
+  increment = () => this.setState((prevState) => ({ count: prevState.count + 1 }));
 
-    };
-  }
+  decrement = () => this.setState((prevState) => ({ count: prevState.count - 1 }));
 
-  // set increment function change set state "Setstate"
-
-  // setState - To State manipulate
-  increment() {
-    this.setState((state) => ({ count: state.count + 1 }));
-  }
-
-  decrement() { this.setState((prevState) => ({ count: prevState.value - 1 })); }
+  // increment = () => this.setState(({ count }) => ({ count: count + 1}))
 
   render() {
     const { count } = this.state;
