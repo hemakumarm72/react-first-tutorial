@@ -36,6 +36,12 @@ const navmenudata = [
     link: '/state',
 
   },
+
+  {
+    menu: 'Toggle',
+    link: '/toggle',
+
+  },
 ];
 
 const Navmenu = () => (

@@ -5,6 +5,7 @@ import Navbar from './components/navbar/navbar';
 import Banner from './components/banner/banner';
 import Content from './components/content/content';
 import Statecontain from './components/state/State';
+import Toggles from './components/toggle/toggle';
 
 const Home = () => (
   <div className="site">
@@ -44,6 +45,12 @@ const State = () => (
   </div>
 );
 
+const Toggle = () => (
+  <div className="toggle">
+    <Toggles />
+  </div>
+);
+
 function App() {
   return (
 
@@ -55,6 +62,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
         <Route exact path="/state" component={State} />
+        <Route exact path="/toggle" component={Toggle} />
       </Switch>
     </BrowserRouter>
 
