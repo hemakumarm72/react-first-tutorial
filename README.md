@@ -2,6 +2,10 @@
 https://angry-feynman-9adb25.netlify.app/
 
 
+# Heroku deploy site
+https://first-react-tuturial.herokuapp.com
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
