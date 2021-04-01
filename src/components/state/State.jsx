@@ -17,10 +17,10 @@ class Counter extends React.Component {
 
       <div className="counter">
         <h3>counting</h3>
-        <button type="button" onClick={this.increment}>click +</button>
 
-        <p>{count}</p>
-        <button type="button" onClick={this.decrement}>click -</button>
+        <p className="count">{count}</p>
+        <button className="button1" type="button" onClick={this.increment}>+</button>
+        <button className="button2" type="button" onClick={this.decrement}>-</button>
       </div>
     );
   }
