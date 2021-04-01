@@ -3,7 +3,7 @@ https://angry-feynman-9adb25.netlify.app/
 
 
 # Heroku deploy site
-https://first-react-tuturial.herokuapp.com/about
+https://first-react-tuturial.herokuapp.com
 
 
 # Getting Started with Create React App
