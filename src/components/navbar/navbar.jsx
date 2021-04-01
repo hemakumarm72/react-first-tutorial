@@ -30,6 +30,12 @@ const navmenudata = [
     link: '/about',
 
   },
+
+  {
+    menu: 'State',
+    link: '/state',
+
+  },
 ];
 
 const Navmenu = () => (

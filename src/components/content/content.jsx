@@ -1,7 +1,7 @@
 import React from 'react';
 import './content.css';
 
-export function Content({ types }) {
+function Content({ types }) {
   return (
     <div className="content">
 

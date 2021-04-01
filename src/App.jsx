@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Banner from './components/banner/banner';
-import { Content } from './components/content/content';
+import Content from './components/content/content';
+import Statecontain from './components/state/State';
 
 const Home = () => (
   <div className="site">
@@ -36,6 +37,13 @@ const About = () => (
     <Content types="About" />
   </div>
 );
+
+const State = () => (
+  <div className="state">
+    <Statecontain />
+  </div>
+);
+
 function App() {
   return (
 
@@ -46,6 +54,7 @@ function App() {
         <Route exact path="/news" component={News} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/state" component={State} />
       </Switch>
     </BrowserRouter>
 
