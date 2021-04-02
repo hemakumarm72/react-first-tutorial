@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner.css';
+import img from '../../image/banner.jfif';
 
 function banner() {
   return (
@@ -14,7 +15,7 @@ function banner() {
 const Bgimage = () => (
   <div className="banner-img">
 
-    <img src="./image/banner.jfif" alt="" />
+    <img src={img} alt="" />
     <Bgtext />
   </div>
 );

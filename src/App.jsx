@@ -9,7 +9,7 @@ import Toggles from './components/toggle/toggle';
 
 const Home = () => (
   <div className="site">
-
+    <title>Home Page</title>
     <Banner />
     <Content types="Home" />
 
@@ -19,6 +19,7 @@ const Home = () => (
 
 const News = () => (
   <div className="news">
+    <title>News Page</title>
     <Banner />
     <Content types="News" />
   </div>
@@ -26,6 +27,7 @@ const News = () => (
 
 const Contact = () => (
   <div className="contact">
+    <title>Contact Page</title>
     <Banner />
     <Content types="Contact" />
   </div>
@@ -33,7 +35,7 @@ const Contact = () => (
 
 const About = () => (
   <div className="about">
-
+    <title>About Page</title>
     <Banner />
     <Content types="About" />
   </div>
@@ -41,12 +43,14 @@ const About = () => (
 
 const State = () => (
   <div className="state">
+    <title>State Function</title>
     <Statecontain />
   </div>
 );
 
 const Toggle = () => (
   <div className="toggle">
+    <title>Task Page</title>
     <Toggles />
   </div>
 );

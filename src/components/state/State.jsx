@@ -4,6 +4,17 @@ import './state.css';
 class Counter extends React.Component {
   state = { count: 0 }
 
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.increment(),
+      1000,
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
   increment = () => this.setState((prevState) => ({ count: prevState.count + 1 }));
 
   decrement = () => this.setState((prevState) => ({ count: prevState.count - 1 }));
