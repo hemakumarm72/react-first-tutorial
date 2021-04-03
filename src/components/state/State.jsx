@@ -8,8 +8,6 @@ class Counter extends React.Component {
 
   decrement = () => this.setState((prevState) => ({ count: prevState.count - 1 }));
 
-  // increment = () => this.setState(({ count }) => ({ count: count + 1}))
-
   render() {
     const { count } = this.state;
 
@@ -31,6 +29,7 @@ function State() {
     <div className="state_contain">
 
       <Counter />
+
     </div>
   );
 }

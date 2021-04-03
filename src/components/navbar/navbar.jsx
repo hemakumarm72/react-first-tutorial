@@ -1,11 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
-
-function navbar() {
-  return (
-    <Navmenu />
-  );
-}
 
 // array of data
 const navmenudata = [
@@ -45,21 +40,29 @@ const navmenudata = [
 ];
 
 const Navmenu = () => (
-  <div className="navbar">
+  <nav>
+    {navmenudata.map((d) => (
 
-    <ul>
+      <NavLink activeClassName="active" exact to={d.link}>
 
-      {navmenudata.map((d) => (
+        {d.menu}
 
-        <li>
+      </NavLink>
 
-          <a href={d.link} className={window.location.pathname === d.link ? 'active' : ''}>{d.menu}</a>
-        </li>
+    ))}
 
-      ))}
-    </ul>
+  </nav>
 
-  </div>
 );
+
+function navbar() {
+  return (
+    <div className="navigation">
+
+      <Navmenu />
+
+    </div>
+  );
+}
 
 export default navbar;
